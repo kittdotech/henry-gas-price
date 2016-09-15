@@ -4,7 +4,7 @@
   "description": "List of the world's major cities (above 15,000 inhabitants)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/datasets/world-cities.git"
+    "url": "git://github.com/kittdotech/henry-gas-price.git"
   },
   "sources": [{
     "name": "EIA",
@@ -31,9 +31,9 @@
             "name": "price",
             "description": "Price in Dollars per Million Btu",
             "type": "float"
-          },
+          }
         ]
-      },
+      }
     },
     {
       "name": "henry-gas-price-montly",
@@ -51,10 +51,10 @@
             "name": "price",
             "description": "Price in Dollars per Million Btu",
             "type": "float"
-          },
+          }
         ]
-      },
+      }
     }
   ],
-  "homepage": "http://github.com/datasets/world-cities"
+  "homepage": "https://github.com/kittdotech/henry-gas-price"
 }
