@@ -6,7 +6,7 @@ The data is extracted from [EIA][eia], a very exhaustive list of worldwide topon
 
 This [datapackage][datapackage] only list prices for Natural Gas.
 
-[eia]: http:// http://www.eia.gov/
+[eia]: http://http://www.eia.gov/
 [datapackage]: http://dataprotocols.org/data-packages/
 
 
