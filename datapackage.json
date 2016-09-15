@@ -1,7 +1,7 @@
 {
   "name": "henry-gas-price",
   "title": "Henry Hub gas prices",
-  "description": "List of the world's major cities (above 15,000 inhabitants)",
+  "description": "List of the Henry Hub gas prices",
   "repository": {
     "type": "git",
     "url": "git://github.com/kittdotech/henry-gas-price.git"
@@ -24,7 +24,7 @@
         "fields": [
           {
             "name": "Date",
-            "description": "First Date in the year",
+            "description": "First Date of the year",
             "type": "date"
           },
           {
@@ -44,11 +44,51 @@
         "fields": [
           {
             "name": "Date",
-            "description": "First Date in the year",
+            "description": "First Date of the month",
             "type": "date"
           },
           {
-            "name": "price",
+            "name": "Price",
+            "description": "Price in Dollars per Million Btu",
+            "type": "float"
+          }
+        ]
+      }
+    },
+    {
+      "name": "henry-gas-price-weekly",
+      "path": "data/price_weekly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "description": "First Date of the week",
+            "type": "date"
+          },
+          {
+            "name": "Price",
+            "description": "Price in Dollars per Million Btu",
+            "type": "float"
+          }
+        ]
+      }
+    },
+    {
+      "name": "henry-gas-price-daily",
+      "path": "data/price_daily.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "description": "Date",
+            "type": "date"
+          },
+          {
+            "name": "Price",
             "description": "Price in Dollars per Million Btu",
             "type": "float"
           }
