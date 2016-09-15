@@ -1,0 +1,60 @@
+{
+  "name": "henry-gas-price",
+  "title": "Henry Hub gas prices",
+  "description": "List of the world's major cities (above 15,000 inhabitants)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datasets/world-cities.git"
+  },
+  "sources": [{
+    "name": "EIA",
+    "web": "http://www.eia.gov"
+  }],
+  "keywords": [
+    "price",
+    "henry"
+  ],
+  "resources": [
+    {
+      "name": "henry-gas-price-yearly",
+      "path": "data/price_yearly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "description": "First Date in the year",
+            "type": "date"
+          },
+          {
+            "name": "price",
+            "description": "Price in Dollars per Million Btu",
+            "type": "float"
+          },
+        ]
+      },
+    },
+    {
+      "name": "henry-gas-price-montly",
+      "path": "data/price_monthly.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "description": "First Date in the year",
+            "type": "date"
+          },
+          {
+            "name": "price",
+            "description": "Price in Dollars per Million Btu",
+            "type": "float"
+          },
+        ]
+      },
+    }
+  ],
+  "homepage": "http://github.com/datasets/world-cities"
+}
